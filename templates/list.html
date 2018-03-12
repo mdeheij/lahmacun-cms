@@ -1,0 +1,10 @@
+<html>
+<body>
+    <h1>Content list</h1>
+    <ul>
+        {{range .contents}}
+        <li><a href="/edit/{{.ID}}">{{.Title}} ({{.Slug}})</a></li>
+        {{end}}
+    </ul>
+</body>
+</html>
